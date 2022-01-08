@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+
+body{
+  background-image: linear-gradient(to right, rgb(0, 0, 0) , rgb(48, 0, 53));
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: min(100%, 90vw);
+  height: 100%;
+}
+
+.App > h1{
+  font-style: italic;
+  font-size: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App > h2{
+  font-weight: 600;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.option{
+  width: 100%;
+  /* background-color: rgb(206, 206, 206); */
+  margin: 10px 0px;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 10px; */
+  border-bottom: 1px solid rgb(226, 226, 226);
+  min-width: 300px;
+  transition: all 0.1s ease-in-out;
 }
+
+.option:hover{
+  padding-bottom: 5px;
+  transition: all 0.1s ease-in-out;
+}
+
+
+.option> p{
+  font-size: 18px;
+  margin: 0px 5px 0px 0px;
+  color: white;
+}
+
+.searchBar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar > input{
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  margin-left: 15px;
+  min-width: 300px;
+  transition: all 0.1s ease-in-out;
+}
+
+.searchBar > input:focus{
+  outline: none;
+}
+
+.searchBar > input:hover{
+  min-width: 320px;
+  transition: all 0.1s ease-in-out;
+}
+
